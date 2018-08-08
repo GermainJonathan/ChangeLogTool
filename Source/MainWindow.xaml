@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Source"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ChangeLogTool" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="test" Content="Test" HorizontalAlignment="Left" Height="35" Margin="300,340,0,0" VerticalAlignment="Top" Width="180" Click="test_Click"/>
+
     </Grid>
 </Window>

@@ -20,9 +20,19 @@ namespace Source
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ConnectToJIRA api;
+
         public MainWindow()
         {
             InitializeComponent();
+            this.api = new ConnectToJIRA();
+            Console.WriteLine("TEST EXECUTION");
+        }
+
+        private void test_Click(object sender, RoutedEventArgs e)
+        {
+            Object test = this.api.GetPermission();
+            Console.WriteLine(test);
         }
     }
 }
