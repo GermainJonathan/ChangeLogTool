@@ -26,13 +26,12 @@ namespace Source
         {
             InitializeComponent();
             this.api = new ConnectToJIRA();
-            Console.WriteLine("TEST EXECUTION");
         }
 
-        private void test_Click(object sender, RoutedEventArgs e)
+        private async void test_Click(object sender, RoutedEventArgs e)
         {
-            Object test = this.api.GetPermission();
-            Console.WriteLine(test);
+            Permissions test = await this.api.GetPermission();
         }
+
     }
 }
